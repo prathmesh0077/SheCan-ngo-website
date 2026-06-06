@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn about She Can Foundation — our story, vision, mission, values, and the team driving women's empowerment."
+        />
+        <title>About Us | She Can Foundation</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="page-transition"></div>
+        <div id="progress-bar"></div>
+        <div id="mouse-glow" aria-hidden="true"></div>
+
+        <!-- Loading -->
+        <div id="loader" role="status">
+            <div class="loader-logo"><span>She</span> Can Foundation</div>
+            <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav id="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-inner">
+                <a
+                    href="index.html"
+                    class="nav-brand"
+                    aria-label="She Can Foundation - Home"
+                >
+                    <div><img class="logopic" src="shecan-logo.avif"></div>
+                    <div class="nav-brand-text">
+                        She Can Foundation <span>Empowering Women</span>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        🌙
+                    </button>
+                    <a href="volunteer.html" class="btn btn-primary nav-cta"
+                        >Join Us</a
+                    >
+                    <button
+                        class="hamburger"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                    >
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+            <a href="volunteer.html" class="btn btn-primary mobile-cta"
+                >Join Us →</a
+            >
+        </nav>
+
+        <!-- PAGE HERO -->
+        <header class="page-hero page-top" aria-labelledby="about-hero-heading">
+            <div
+                class="blob blob-1"
+                aria-hidden="true"
+                style="opacity: 0.15; top: -200px; right: -100px"
+            ></div>
+            <div class="container" style="position: relative; z-index: 1">
+                <div class="page-hero-badge">About She Can Foundation</div>
+                <h1 id="about-hero-heading">
+                    Our Story, Our Mission, <em>Our People</em>
+                </h1>
+                <p>
+                    Founded in 2018, She Can Foundation has grown from a small
+                    community initiative into a movement that has touched
+                    thousands of lives across India.
+                </p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a> / <span>About Us</span>
+                </nav>
+            </div>
+        </header>
+
+        <!-- INTRODUCTION -->
+        <section aria-labelledby="intro-heading">
+            <div class="container">
+                <div class="mission-grid">
+                    <div class="reveal-left">
+                        <span class="section-label">Who We Are</span>
+                        <h2 id="intro-heading">
+                            A Movement Rooted in <em>Belief</em>
+                        </h2>
+                        <p>
+                            She Can Foundation began with a single workshop in
+                            Nashik, Maharashtra — 12 women, one room, and the
+                            shared conviction that things could be different.
+                            Today, we operate across 14 states, running over 25
+                            active programs that span education, economic
+                            empowerment, health literacy, and leadership
+                            development.
+                        </p>
+                        <p>
+                            We are a registered non-profit organization
+                            committed to creating inclusive, sustainable change.
+                            Our work is guided by the women we serve — their
+                            voices shape our programs, our priorities, and our
+                            path forward.
+                        </p>
+                        <p style="margin-bottom: 1.5rem">
+                            We believe that when you invest in a woman, you
+                            invest in an entire community. That's not just our
+                            tagline — it's a truth we've watched unfold
+                            thousands of times.
+                        </p>
+                        <a href="programs.html" class="btn btn-primary"
+                            >Explore Our Programs →</a
+                        >
+                    </div>
+                    <div class="reveal-right" style="display: grid; gap: 1rem">
+                        <div
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    var(--orange),
+                                    #ff8c6e
+                                );
+                                border-radius: var(--radius-xl);
+                                padding: 3rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                aspect-ratio: 4/3;
+                                font-size: 6rem;
+                            "
+                        >
+                            🌺
+                        </div>
+                        <div
+                            style="
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                gap: 1rem;
+                            "
+                        >
+                            <div class="impact-card" style="margin: 0">
+                                <span class="impact-icon">📍</span>
+                                <span
+                                    class="impact-number"
+                                    data-count="14"
+                                    data-suffix=" States"
+                                    >14 States</span
+                                >
+                                <span class="impact-label"
+                                    >Pan-India Presence</span
+                                >
+                            </div>
+                            <div class="impact-card" style="margin: 0">
+                                <span class="impact-icon">📅</span>
+                                <span class="impact-number">2018</span>
+                                <span class="impact-label">Year Founded</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISION & MISSION -->
+        <section style="background: var(--bg-alt)" aria-labelledby="vm-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Purpose & Direction</span>
+                    <h2 id="vm-heading">Vision & Mission</h2>
+                    <p>Two pillars that anchor everything we do.</p>
+                </div>
+                <div class="vm-grid">
+                    <div class="vm-card reveal reveal-delay-1">
+                        <div class="vm-icon" aria-hidden="true">🔭</div>
+                        <h3>Our Vision</h3>
+                        <p>
+                            A world where every woman — regardless of her
+                            background, location, or circumstance — has equal
+                            access to education, economic opportunity, and the
+                            freedom to lead the life she chooses.
+                        </p>
+                        <p style="margin-top: 0.75rem">
+                            We envision societies where gender is never a
+                            barrier, and where women's contributions are valued,
+                            celebrated, and built upon.
+                        </p>
+                    </div>
+                    <div class="vm-card reveal reveal-delay-2">
+                        <div class="vm-icon" aria-hidden="true">🎯</div>
+                        <h3>Our Mission</h3>
+                        <p>
+                            To empower women through education, skill
+                            development, and community building — creating
+                            pathways to economic independence, confident
+                            leadership, and lasting social change.
+                        </p>
+                        <p style="margin-top: 0.75rem">
+                            We do this by partnering with communities, listening
+                            to women's needs, and delivering programs that
+                            create real, measurable impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CORE VALUES -->
+        <section aria-labelledby="values-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">What Drives Us</span>
+                    <h2 id="values-heading">Our Core Values</h2>
+                    <p>
+                        These five principles guide every decision, program, and
+                        partnership we make.
+                    </p>
+                </div>
+                <div class="values-grid">
+                    <article class="value-card reveal reveal-delay-1">
+                        <span class="vc-icon" aria-hidden="true">⚖️</span>
+                        <div class="vc-title">Equality</div>
+                        <p class="vc-text">
+                            Every woman deserves equal rights, opportunities,
+                            and respect — no exceptions.
+                        </p>
+                    </article>
+                    <article class="value-card reveal reveal-delay-2">
+                        <span class="vc-icon" aria-hidden="true">💪</span>
+                        <div class="vc-title">Empowerment</div>
+                        <p class="vc-text">
+                            We build confidence, skills, and agency — not
+                            dependency.
+                        </p>
+                    </article>
+                    <article class="value-card reveal reveal-delay-3">
+                        <span class="vc-icon" aria-hidden="true">🌈</span>
+                        <div class="vc-title">Inclusion</div>
+                        <p class="vc-text">
+                            We celebrate diversity and ensure no woman is left
+                            behind.
+                        </p>
+                    </article>
+                    <article class="value-card reveal reveal-delay-4">
+                        <span class="vc-icon" aria-hidden="true">🎓</span>
+                        <div class="vc-title">Education</div>
+                        <p class="vc-text">
+                            Knowledge is the foundation of every form of
+                            liberation.
+                        </p>
+                    </article>
+                    <article class="value-card reveal reveal-delay-1">
+                        <span class="vc-icon" aria-hidden="true">🚀</span>
+                        <div class="vc-title">Leadership</div>
+                        <p class="vc-text">
+                            We cultivate women who lead with courage,
+                            compassion, and conviction.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE -->
+        <section
+            style="background: var(--bg-alt)"
+            aria-labelledby="timeline-heading"
+        >
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Our Journey</span>
+                    <h2 id="timeline-heading">Milestones That Shaped Us</h2>
+                </div>
+                <div class="timeline" role="list">
+                    <div class="timeline-item reveal" role="listitem">
+                        <div class="tl-dot" aria-hidden="true">🌱</div>
+                        <div class="tl-content">
+                            <div class="tl-year">2018</div>
+                            <h4>The Seed Is Planted</h4>
+                            <p>
+                                Founded in Nashik with our first workshop
+                                serving 12 women. The response was overwhelming
+                                — a waiting list of 80 formed within a week.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="timeline-item reveal reveal-delay-1"
+                        role="listitem"
+                    >
+                        <div class="tl-dot" aria-hidden="true">📋</div>
+                        <div class="tl-content">
+                            <div class="tl-year">2019</div>
+                            <h4>Official Registration</h4>
+                            <p>
+                                Became a registered NGO and launched our first
+                                three formal programs: Basic Literacy,
+                                Vocational Skills, and Women's Health Awareness.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="timeline-item reveal reveal-delay-2"
+                        role="listitem"
+                    >
+                        <div class="tl-dot" aria-hidden="true">🏙️</div>
+                        <div class="tl-content">
+                            <div class="tl-year">2020</div>
+                            <h4>Expansion During Crisis</h4>
+                            <p>
+                                Despite the pandemic, we pivoted to digital
+                                delivery and reached 500+ women with online
+                                skill-building workshops across Maharashtra.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="timeline-item reveal reveal-delay-1"
+                        role="listitem"
+                    >
+                        <div class="tl-dot" aria-hidden="true">🤝</div>
+                        <div class="tl-content">
+                            <div class="tl-year">2021–22</div>
+                            <h4>National Partnerships</h4>
+                            <p>
+                                Formed partnerships with 6 state governments and
+                                12 corporate CSR programs, scaling our reach to
+                                8 new states.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="timeline-item reveal reveal-delay-2"
+                        role="listitem"
+                    >
+                        <div class="tl-dot" aria-hidden="true">🏆</div>
+                        <div class="tl-content">
+                            <div class="tl-year">2023</div>
+                            <h4>National NGO Excellence Award</h4>
+                            <p>
+                                Recognized as one of India's top 10 women's
+                                empowerment NGOs by the National Voluntary
+                                Organizations Council.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="timeline-item reveal reveal-delay-1"
+                        role="listitem"
+                    >
+                        <div class="tl-dot" aria-hidden="true">🌟</div>
+                        <div class="tl-content">
+                            <div class="tl-year">2024–26</div>
+                            <h4>5000+ Lives Transformed</h4>
+                            <p>
+                                Surpassed our 5,000 beneficiary milestone and
+                                launched our ambitious "She Leads 2030" campaign
+                                targeting 25,000 women across 25 states.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section aria-labelledby="team-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label"
+                        >The People Behind The Work</span
+                    >
+                    <h2 id="team-heading">Meet Our Team</h2>
+                    <p>
+                        A dedicated group of changemakers who show up every day
+                        for the women we serve.
+                    </p>
+                </div>
+                <div class="team-grid">
+                    <article class="team-card reveal reveal-delay-1">
+                        <div class="team-avatar" aria-hidden="true">👩‍💼</div>
+                        <div class="team-name">Meera Joshi</div>
+                        <div class="team-role">Founder & Director</div>
+                        <p class="team-bio">
+                            Social entrepreneur and women's rights advocate with
+                            15+ years of grassroots experience across rural
+                            Maharashtra.
+                        </p>
+                    </article>
+                    <article class="team-card reveal reveal-delay-2">
+                        <div class="team-avatar" aria-hidden="true">👩‍🏫</div>
+                        <div class="team-name">Dr. Sunita Rao</div>
+                        <div class="team-role">Programs Coordinator</div>
+                        <p class="team-bio">
+                            PhD in Social Work, designs and oversees our
+                            education and skills programs across all 14 states.
+                        </p>
+                    </article>
+                    <article class="team-card reveal reveal-delay-3">
+                        <div class="team-avatar" aria-hidden="true">👩‍💻</div>
+                        <div class="team-name">Aisha Khan</div>
+                        <div class="team-role">Technology Lead</div>
+                        <p class="team-bio">
+                            Leads our digital literacy programs and manages our
+                            online learning platform reaching women in remote
+                            areas.
+                        </p>
+                    </article>
+                    <article class="team-card reveal reveal-delay-4">
+                        <div class="team-avatar" aria-hidden="true">👩‍🌾</div>
+                        <div class="team-name">Lakshmi Devi</div>
+                        <div class="team-role">Field Coordinator</div>
+                        <p class="team-bio">
+                            Community builder who bridges the gap between our
+                            programs and the women who need them most.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="cta-banner" aria-labelledby="about-cta-heading">
+            <div class="container" style="position: relative; z-index: 1">
+                <span
+                    class="section-label"
+                    style="
+                        color: rgba(255, 255, 255, 0.7);
+                        justify-content: center;
+                    "
+                    >Be Part of the Story</span
+                >
+                <h2 id="about-cta-heading">Join Our Mission</h2>
+                <p>
+                    Whether you volunteer, donate, or simply spread the word —
+                    your support powers the change we create together.
+                </p>
+                <div
+                    style="
+                        display: flex;
+                        gap: 1rem;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    "
+                >
+                    <a href="volunteer.html" class="btn btn-white"
+                        >Become a Volunteer →</a
+                    >
+                    <a
+                        href="contact.html"
+                        class="btn btn-outline"
+                        style="
+                            border-color: rgba(255, 255, 255, 0.4);
+                            color: #fff;
+                        "
+                        >Get in Touch</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a
+                            href="index.html"
+                            class="nav-brand"
+                            style="margin-bottom: 0.5rem; display: inline-flex"
+                        >
+                            <div><img class="logopic" src="shecan-logo.avif"></div>
+                            <div class="nav-brand-text">
+                                She Can Foundation <span>Empowering Women</span>
+                            </div>
+                        </a>
+                        <p>
+                            We believe in a world where every woman has the
+                            power, support, and opportunity to reach her full
+                            potential.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook">f</a>
+                            <a href="#" aria-label="Instagram">ig</a>
+                            <a href="#" aria-label="LinkedIn">in</a>
+                            <a href="#" aria-label="YouTube">▶</a>
+                        </div>
+                    </div>
+                    <nav aria-label="Quick links">
+                        <div class="footer-col">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="programs.html">Programs</a></li>
+                                <li><a href="volunteer.html">Volunteer</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer-col">
+                        <h5>Programs</h5>
+                        <ul>
+                            <li><a href="programs.html">Education</a></li>
+                            <li>
+                                <a href="programs.html">Entrepreneurship</a>
+                            </li>
+                            <li>
+                                <a href="programs.html">Skill Development</a>
+                            </li>
+                            <li><a href="programs.html">Leadership</a></li>
+                            <li>
+                                <a href="programs.html">Community Outreach</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Newsletter</h5>
+                        <p
+                            style="
+                                font-size: 0.85rem;
+                                margin-bottom: 1rem;
+                                color: rgba(255, 255, 255, 0.5);
+                            "
+                        >
+                            Get updates on our programs and impact stories.
+                        </p>
+                        <form
+                            class="newsletter-form"
+                            aria-label="Newsletter subscription"
+                        >
+                            <input
+                                type="email"
+                                class="newsletter-input"
+                                placeholder="Your email"
+                                required
+                            />
+                            <button type="submit" class="newsletter-btn">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 She Can Foundation. All Rights Reserved. Made with ❤️
+                    for <a href="#">women everywhere</a>.
+                </p>
+            </div>
+        </footer>
+
+        <button id="back-top" aria-label="Back to top">↑</button>
+        <a
+            href="volunteer.html"
+            class="btn btn-primary"
+            id="float-cta"
+            style="opacity: 0; pointer-events: none; transition: opacity 0.3s"
+            >Join Us 🚀</a
+        >
+
+        <script src="script.js"></script>
+    </body>
+</html>

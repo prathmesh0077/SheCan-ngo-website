@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="She Can Foundation — Empowering Women, Transforming Communities through education, skill development, and leadership."
+        />
+        <title>
+            Mobile Responsiveness Requirements (Very Important) The website must
+            be fully responsive and mobile-first, providing an excellent
+            experience across: Mobile Phones (320px–767px) Tablets
+            (768px–1023px) Laptops (1024px–1439px) Large Desktops (1440px+)
+            Responsive Layout Rules Navigation Convert navbar into a hamburger
+            menu on screens below 768px. Mobile menu should slide in smoothly
+            from the side. Touch-friendly navigation links. Sticky navbar on all
+            devices. Hero Section Stack content vertically on mobile. Hero image
+            should resize proportionally. Headings should scale using responsive
+            typography (clamp()). Buttons should become full-width on smaller
+            screens. Cards & Grids Use CSS Grid and Flexbox. 4-column layouts →
+            2 columns on tablets → 1 column on mobile. No horizontal scrolling
+            at any screen size. Cards should maintain proper spacing and
+            proportions. Forms Inputs should be full width on mobile. Proper
+            touch targets (minimum 44px height). Responsive validation messages.
+            Mobile-friendly spacing and padding. Images Use responsive images
+            with: max-width: 100%; height: auto; Images should never overflow
+            containers. Support high-DPI/mobile screens. Typography Use fluid
+            typography: font-size: clamp(min, preferred, max); Examples: h1:
+            clamp(2rem, 5vw, 4.5rem); h2: clamp(1.5rem, 4vw, 3rem); p:
+            clamp(0.95rem, 2vw, 1.1rem); Spacing Use responsive spacing:
+            padding: clamp(1rem, 4vw, 5rem); margin: clamp(0.5rem, 2vw, 2rem);
+            Footer Stack footer sections vertically on mobile. Keep social icons
+            touch-friendly. Newsletter form should become single-column.
+            Performance Optimization Avoid layout shifts. Lazy-load images.
+            Optimize animations for mobile devices. Reduce animation intensity
+            on low-power devices. Respect prefers-reduced-motion. Responsive
+            Breakpoints /* Mobile */ @media (max-width: 767px) /* Tablet */
+            @media (min-width: 768px) and (max-width: 1023px) /* Laptop */
+            @media (min-width: 1024px) /* Large Desktop */ @media (min-width:
+            1440px) Accessibility Requirements WCAG-compliant color contrast.
+            Keyboard navigation support. ARIA labels where necessary. Visible
+            focus states. Screen-reader friendly forms. Touch-friendly controls.
+            Mobile UX Features Floating "Join Us" button on mobile.
+            Swipe-friendly sections. Scroll-to-top button. Mobile-optimized
+            animations. Fast loading on 3G/4G connections. Responsive dark mode
+            toggle. Final Requirement The website must achieve: 100% responsive
+            layout No horizontal scrolling Consistent appearance across Android,
+            iPhone, tablets, laptops, and desktops Modern premium NGO design
+            Smooth performance on low-end mobile devices Pixel-perfect
+            responsiveness for all pages (Home, About, Programs, Volunteer,
+            Contact) Generate all HTML, CSS, and JavaScript with responsiveness
+            built in from the start, not added afterward. She Can Foundation |
+            Empowering Women. Transforming Communities.
+        </title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Page Transition -->
+        <div class="page-transition"></div>
+
+        <!-- Progress Bar -->
+        <div id="progress-bar"></div>
+
+        <!-- Mouse Glow -->
+        <div id="mouse-glow" aria-hidden="true"></div>
+
+        <!-- Loading Screen -->
+        <div id="loader" role="status" aria-label="Loading">
+            <div class="loader-logo"><span>She</span> Can Foundation</div>
+            <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+        </div>
+
+        <!-- ============ NAVBAR ============ -->
+        <nav id="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-inner">
+                <a
+                    href="index.html"
+                    class="nav-brand"
+                    aria-label="She Can Foundation - Home"
+                >
+                    <div><img class="logopic" src="shecan-logo.avif"></div>
+                    <div class="nav-brand-text">
+                        She Can Foundation <span>Empowering Women</span>
+                    </div>
+                </a>
+                <ul class="nav-links" role="list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        🌙
+                    </button>
+                    <a href="volunteer.html" class="btn btn-primary nav-cta"
+                        >Join Us</a
+                    >
+                    <button
+                        class="hamburger"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-nav"
+                    >
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+            <a href="volunteer.html" class="btn btn-primary mobile-cta"
+                >Join Us →</a
+            >
+        </nav>
+
+        <!-- ============ HERO ============ -->
+        <section class="hero" aria-label="Hero section">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="blob blob-1" aria-hidden="true"></div>
+            <div class="blob blob-2" aria-hidden="true"></div>
+            <div class="shape shape-1" aria-hidden="true"></div>
+            <div class="shape shape-2" aria-hidden="true"></div>
+            <div class="shape shape-3" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-content">
+                        <div class="hero-tag">
+                            <span
+                                class="hero-tag-dot"
+                                aria-hidden="true"
+                            ></span>
+                            Making Change Since 2018
+                        </div>
+                        <h1 class="hero-title">
+                            Empowering Women.<br />
+                            <em>Transforming</em>
+                            <span class="typing-text typing-cursor"
+                                >Communities</span
+                            >
+                        </h1>
+                        <p class="hero-subtitle">
+                            We believe every woman deserves the tools,
+                            knowledge, and community to thrive. She Can
+                            Foundation creates lasting change through education,
+                            leadership, and empowerment.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="volunteer.html" class="btn btn-primary"
+                                >Join Us →</a
+                            >
+                            <a href="about.html" class="btn btn-outline"
+                                >Learn More</a
+                            >
+                        </div>
+                        <div class="hero-stats" aria-label="Impact statistics">
+                            <div>
+                                <span
+                                    class="hero-stat-num"
+                                    data-count="5000"
+                                    data-suffix="+"
+                                    >5000+</span
+                                >
+                                <span class="hero-stat-label"
+                                    >Women Empowered</span
+                                >
+                            </div>
+                            <div>
+                                <span
+                                    class="hero-stat-num"
+                                    data-count="120"
+                                    data-suffix="+"
+                                    >120+</span
+                                >
+                                <span class="hero-stat-label">Volunteers</span>
+                            </div>
+                            <div>
+                                <span
+                                    class="hero-stat-num"
+                                    data-count="80"
+                                    data-suffix="+"
+                                    >80+</span
+                                >
+                                <span class="hero-stat-label">Communities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="hero-img-wrapper">
+                            <div class="hero-img-frame">
+                                <svg
+                                    viewBox="0 0 480 600"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <defs>
+                                        <radialGradient
+                                            id="heroGrad"
+                                            cx="50%"
+                                            cy="30%"
+                                            r="70%"
+                                        >
+                                            <stop
+                                                offset="0%"
+                                                stop-color="#FF7A5A"
+                                            />
+                                            <stop
+                                                offset="100%"
+                                                stop-color="#FF5A36"
+                                            />
+                                        </radialGradient>
+                                    </defs>
+                                    <rect
+                                        width="480"
+                                        height="600"
+                                        fill="url(#heroGrad)"
+                                    />
+                                    <!-- Empowerment figure illustration -->
+                                    <circle
+                                        cx="240"
+                                        cy="160"
+                                        r="70"
+                                        fill="rgba(255,255,255,0.2)"
+                                    />
+                                    <circle
+                                        cx="240"
+                                        cy="145"
+                                        r="45"
+                                        fill="rgba(255,255,255,0.35)"
+                                    />
+                                    <!-- Body -->
+                                    <path
+                                        d="M175 270 Q180 230 240 225 Q300 230 305 270 L320 440 L160 440 Z"
+                                        fill="rgba(255,255,255,0.25)"
+                                    />
+                                    <!-- Arms raised (power pose) -->
+                                    <path
+                                        d="M175 270 Q140 240 100 200"
+                                        stroke="rgba(255,255,255,0.4)"
+                                        stroke-width="22"
+                                        stroke-linecap="round"
+                                        fill="none"
+                                    />
+                                    <path
+                                        d="M305 270 Q340 240 380 200"
+                                        stroke="rgba(255,255,255,0.4)"
+                                        stroke-width="22"
+                                        stroke-linecap="round"
+                                        fill="none"
+                                    />
+                                    <!-- Stars -->
+                                    <text
+                                        x="88"
+                                        y="210"
+                                        font-size="28"
+                                        fill="rgba(255,255,255,0.7)"
+                                    >
+                                        ★
+                                    </text>
+                                    <text
+                                        x="368"
+                                        y="210"
+                                        font-size="28"
+                                        fill="rgba(255,255,255,0.7)"
+                                    >
+                                        ★
+                                    </text>
+                                    <text
+                                        x="220"
+                                        y="80"
+                                        font-size="20"
+                                        fill="rgba(255,255,255,0.5)"
+                                    >
+                                        ✦
+                                    </text>
+                                    <text
+                                        x="340"
+                                        y="120"
+                                        font-size="14"
+                                        fill="rgba(255,255,255,0.4)"
+                                    >
+                                        ✦
+                                    </text>
+                                    <text
+                                        x="120"
+                                        y="140"
+                                        font-size="16"
+                                        fill="rgba(255,255,255,0.4)"
+                                    >
+                                        ✦
+                                    </text>
+                                    <!-- Banner text -->
+                                    <rect
+                                        x="100"
+                                        y="460"
+                                        width="280"
+                                        height="50"
+                                        rx="12"
+                                        fill="rgba(255,255,255,0.15)"
+                                    />
+                                    <text
+                                        x="240"
+                                        y="491"
+                                        text-anchor="middle"
+                                        font-size="18"
+                                        font-weight="bold"
+                                        fill="white"
+                                        font-family="Georgia,serif"
+                                    >
+                                        She Can. She Will.
+                                    </text>
+                                </svg>
+                            </div>
+                            <div class="hero-img-badge glass">
+                                <span class="badge-icon">🏆</span>
+                                <div class="badge-text">
+                                    Award-Winning NGO
+                                    <span>Impact since 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-hint" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- ============ IMPACT STATS ============ -->
+        <section class="impact" aria-labelledby="impact-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Our Impact</span>
+                    <h2 id="impact-heading">Numbers That Tell Our Story</h2>
+                    <p>
+                        Every figure represents a life touched, a dream
+                        unlocked, a future transformed.
+                    </p>
+                </div>
+                <div class="impact-grid">
+                    <article class="impact-card reveal reveal-delay-1">
+                        <span class="impact-icon" aria-hidden="true">👩</span>
+                        <span
+                            class="impact-number"
+                            data-count="5200"
+                            data-suffix="+"
+                            >5200+</span
+                        >
+                        <span class="impact-label">Women Empowered</span>
+                    </article>
+                    <article class="impact-card reveal reveal-delay-2">
+                        <span class="impact-icon" aria-hidden="true">🤝</span>
+                        <span
+                            class="impact-number"
+                            data-count="320"
+                            data-suffix="+"
+                            >320+</span
+                        >
+                        <span class="impact-label">Active Volunteers</span>
+                    </article>
+                    <article class="impact-card reveal reveal-delay-3">
+                        <span class="impact-icon" aria-hidden="true">📚</span>
+                        <span
+                            class="impact-number"
+                            data-count="180"
+                            data-suffix="+"
+                            >180+</span
+                        >
+                        <span class="impact-label">Workshops Conducted</span>
+                    </article>
+                    <article class="impact-card reveal reveal-delay-4">
+                        <span class="impact-icon" aria-hidden="true">🏘️</span>
+                        <span
+                            class="impact-number"
+                            data-count="95"
+                            data-suffix="+"
+                            >95+</span
+                        >
+                        <span class="impact-label">Communities Reached</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave -->
+        <div class="wave-divider" aria-hidden="true">
+            <svg
+                viewBox="0 0 1440 60"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+            >
+                <path
+                    d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"
+                    fill="var(--bg)"
+                />
+            </svg>
+        </div>
+
+        <!-- ============ MISSION ============ -->
+        <section aria-labelledby="mission-heading">
+            <div class="container">
+                <div class="mission-grid">
+                    <div class="mission-content reveal-left">
+                        <span class="section-label">What We Stand For</span>
+                        <h2 id="mission-heading">
+                            Building a World Where Every Woman <em>Thrives</em>
+                        </h2>
+                        <p>
+                            She Can Foundation was born from a simple belief:
+                            when women rise, communities flourish. We work at
+                            the intersection of education, economics, and
+                            empowerment to create systems of lasting change.
+                        </p>
+                        <p>
+                            Our holistic approach addresses the root causes of
+                            inequality — providing women with access to
+                            education, mentorship, economic opportunities, and a
+                            powerful support network.
+                        </p>
+                        <a
+                            href="about.html"
+                            class="btn btn-primary"
+                            style="margin-top: 0.5rem"
+                            >Our Story →</a
+                        >
+                    </div>
+                    <div class="mission-cards reveal-right">
+                        <article class="mission-card">
+                            <div class="mc-icon" aria-hidden="true">📖</div>
+                            <div class="mc-title">Education First</div>
+                            <p class="mc-text">
+                                Scholarships, literacy programs, and skill-based
+                                learning for women of all ages.
+                            </p>
+                        </article>
+                        <article class="mission-card">
+                            <div class="mc-icon" aria-hidden="true">💡</div>
+                            <div class="mc-title">Skill Development</div>
+                            <p class="mc-text">
+                                Vocational training, digital literacy, and
+                                entrepreneurship workshops.
+                            </p>
+                        </article>
+                        <article class="mission-card">
+                            <div class="mc-icon" aria-hidden="true">🌟</div>
+                            <div class="mc-title">Leadership</div>
+                            <p class="mc-text">
+                                Mentorship programs that nurture the next
+                                generation of women leaders.
+                            </p>
+                        </article>
+                        <article class="mission-card">
+                            <div class="mc-icon" aria-hidden="true">🤲</div>
+                            <div class="mc-title">Community Support</div>
+                            <p class="mc-text">
+                                Building networks of solidarity, mutual aid, and
+                                collective uplift.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SUCCESS STORIES ============ -->
+        <section class="stories" aria-labelledby="stories-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Real Change</span>
+                    <h2 id="stories-heading">Voices of Transformation</h2>
+                    <p>
+                        Behind every statistic is a real person whose life was
+                        touched by our programs.
+                    </p>
+                </div>
+                <div class="stories-grid">
+                    <article class="story-card reveal reveal-delay-1">
+                        <div class="story-img" aria-hidden="true">🌺</div>
+                        <div class="story-body">
+                            <div class="story-name">Priya Sharma</div>
+                            <div class="story-role">Entrepreneur, Pune</div>
+                            <p class="story-text">
+                                She Can's entrepreneurship program gave me the
+                                confidence and tools to launch my textile
+                                business. Today I employ 12 women from my
+                                village.
+                            </p>
+                            <a href="about.html" class="story-link"
+                                >Read full story →</a
+                            >
+                        </div>
+                    </article>
+                    <article class="story-card reveal reveal-delay-2">
+                        <div class="story-img" aria-hidden="true">🌸</div>
+                        <div class="story-body">
+                            <div class="story-name">Anita Verma</div>
+                            <div class="story-role">
+                                Software Developer, Nashik
+                            </div>
+                            <p class="story-text">
+                                The digital literacy program changed my
+                                trajectory. I went from knowing nothing about
+                                computers to landing my first tech job at 28.
+                            </p>
+                            <a href="about.html" class="story-link"
+                                >Read full story →</a
+                            >
+                        </div>
+                    </article>
+                    <article class="story-card reveal reveal-delay-3">
+                        <div class="story-img" aria-hidden="true">🌻</div>
+                        <div class="story-body">
+                            <div class="story-name">Kavya Nair</div>
+                            <div class="story-role">
+                                Community Leader, Mumbai
+                            </div>
+                            <p class="story-text">
+                                She Can's leadership workshop transformed how I
+                                see myself. I now run a community program that
+                                serves 200 women in my area.
+                            </p>
+                            <a href="about.html" class="story-link"
+                                >Read full story →</a
+                            >
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ GALLERY ============ -->
+        <section aria-labelledby="gallery-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">In The Field</span>
+                    <h2 id="gallery-heading">Our Work In Action</h2>
+                </div>
+                <div
+                    class="gallery-feature reveal"
+                    tabindex="0"
+                    role="img"
+                    aria-label="She Can Foundation community workshop event"
+                >
+                    <div class="gallery-feature-img" aria-hidden="true">🎉</div>
+                    <div class="gallery-overlay" aria-hidden="true">
+                        <h3>Annual Community Summit 2025</h3>
+                        <p>
+                            800 women gathered to celebrate progress and set new
+                            goals
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CTA BANNER ============ -->
+        <section class="cta-banner" aria-labelledby="cta-heading">
+            <div class="container" style="position: relative; z-index: 1">
+                <span
+                    class="section-label"
+                    style="
+                        color: rgba(255, 255, 255, 0.7);
+                        justify-content: center;
+                    "
+                    >Take Action</span
+                >
+                <h2 id="cta-heading">Become a Volunteer Today</h2>
+                <p>
+                    Your time, skills, and passion can change a woman's life —
+                    and in doing so, transform an entire community.
+                </p>
+                <a href="volunteer.html" class="btn btn-white"
+                    >Join She Can Foundation →</a
+                >
+            </div>
+        </section>
+
+        <!-- ============ FOOTER ============ -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a
+                            href="index.html"
+                            class="nav-brand"
+                            style="margin-bottom: 0.5rem; display: inline-flex"
+                        >
+                            <div><img class="logopic" src="shecan-logo.avif"></div>
+                            <div class="nav-brand-text">
+                                She Can Foundation <span>Empowering Women</span>
+                            </div>
+                        </a>
+                        <p>
+                            We believe in a world where every woman has the
+                            power, support, and opportunity to reach her full
+                            potential. Together, we make it happen.
+                        </p>
+                        <div
+                            class="footer-social"
+                            aria-label="Social media links"
+                        >
+                            <a href="#" aria-label="Facebook" title="Facebook"
+                                >f</a
+                            >
+                            <a href="#" aria-label="Instagram" title="Instagram"
+                                >ig</a
+                            >
+                            <a href="#" aria-label="LinkedIn" title="LinkedIn"
+                                >in</a
+                            >
+                            <a href="#" aria-label="YouTube" title="YouTube"
+                                >▶</a
+                            >
+                        </div>
+                    </div>
+                    <nav aria-label="Quick links">
+                        <div class="footer-col">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="programs.html">Programs</a></li>
+                                <li><a href="volunteer.html">Volunteer</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer-col">
+                        <h5>Programs</h5>
+                        <ul>
+                            <li><a href="programs.html">Education</a></li>
+                            <li>
+                                <a href="programs.html">Entrepreneurship</a>
+                            </li>
+                            <li>
+                                <a href="programs.html">Skill Development</a>
+                            </li>
+                            <li><a href="programs.html">Leadership</a></li>
+                            <li>
+                                <a href="programs.html">Community Outreach</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Newsletter</h5>
+                        <p
+                            style="
+                                font-size: 0.85rem;
+                                margin-bottom: 1rem;
+                                color: rgba(255, 255, 255, 0.5);
+                            "
+                        >
+                            Get updates on our programs and impact stories.
+                        </p>
+                        <form
+                            class="newsletter-form"
+                            aria-label="Newsletter subscription"
+                        >
+                            <label
+                                for="newsletter-email"
+                                class="sr-only"
+                                style="
+                                    position: absolute;
+                                    clip: rect(0, 0, 0, 0);
+                                "
+                                >Email address</label
+                            >
+                            <input
+                                type="email"
+                                id="newsletter-email"
+                                class="newsletter-input"
+                                placeholder="Your email"
+                                required
+                                autocomplete="email"
+                            />
+                            <button type="submit" class="newsletter-btn">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 She Can Foundation. All Rights Reserved. Made with ❤️
+                    for <a href="#">women everywhere</a>.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Back to Top -->
+        <button id="back-top" aria-label="Back to top">↑</button>
+
+        <!-- Float CTA (mobile) -->
+        <a
+            href="volunteer.html"
+            class="btn btn-primary"
+            id="float-cta"
+            style="opacity: 0; pointer-events: none; transition: opacity 0.3s"
+            >Join Us 🚀</a
+        >
+
+        <script src="script.js"></script>
+    </body>
+</html>

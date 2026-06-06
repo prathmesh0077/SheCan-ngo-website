@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Volunteer with She Can Foundation — join our mission to empower women across India."
+        />
+        <title>Volunteer | She Can Foundation</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="page-transition"></div>
+        <div id="progress-bar"></div>
+        <div id="mouse-glow" aria-hidden="true"></div>
+
+        <div id="loader" role="status">
+            <div class="loader-logo"><span>She</span> Can Foundation</div>
+            <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav id="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container nav-inner">
+                <a
+                    href="index.html"
+                    class="nav-brand"
+                    aria-label="She Can Foundation - Home"
+                >
+                    <div><img class="logopic" src="shecan-logo.avif"></div>
+                    <div class="nav-brand-text">
+                        She Can Foundation <span>Empowering Women</span>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li>
+                        <a href="volunteer.html" class="active">Volunteer</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        🌙
+                    </button>
+                    <a href="volunteer.html" class="btn btn-primary nav-cta"
+                        >Join Us</a
+                    >
+                    <button
+                        class="hamburger"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                    >
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+            <a href="volunteer.html" class="btn btn-primary mobile-cta"
+                >Join Us →</a
+            >
+        </nav>
+
+        <!-- PAGE HERO -->
+        <header class="page-hero page-top" aria-labelledby="vol-hero-heading">
+            <div
+                class="blob blob-1"
+                style="opacity: 0.12; top: -200px; right: -100px"
+                aria-hidden="true"
+            ></div>
+            <div class="container" style="position: relative; z-index: 1">
+                <div class="page-hero-badge">Volunteer With Us</div>
+                <h1 id="vol-hero-heading">
+                    Be The Change You <em>Wish to See</em>
+                </h1>
+                <p>
+                    Your skills, time, and passion have the power to change
+                    lives. Join our 320+ strong volunteer family and help us
+                    build a more equal world.
+                </p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a> / <span>Volunteer</span>
+                </nav>
+            </div>
+        </header>
+
+        <!-- WHY VOLUNTEER -->
+        <section aria-labelledby="why-vol-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Why Volunteer</span>
+                    <h2 id="why-vol-heading">What You Gain, What You Give</h2>
+                    <p>
+                        Volunteering with She Can isn't just giving — it's
+                        growing.
+                    </p>
+                </div>
+                <div class="impact-grid">
+                    <article class="impact-card reveal reveal-delay-1">
+                        <span class="impact-icon" aria-hidden="true">❤️</span>
+                        <span class="impact-number">Purpose</span>
+                        <span class="impact-label"
+                            >Contribute to meaningful, lasting change</span
+                        >
+                    </article>
+                    <article class="impact-card reveal reveal-delay-2">
+                        <span class="impact-icon" aria-hidden="true">🌐</span>
+                        <span class="impact-number">Network</span>
+                        <span class="impact-label"
+                            >Connect with passionate changemakers</span
+                        >
+                    </article>
+                    <article class="impact-card reveal reveal-delay-3">
+                        <span class="impact-icon" aria-hidden="true">📈</span>
+                        <span class="impact-number">Growth</span>
+                        <span class="impact-label"
+                            >Develop leadership & professional skills</span
+                        >
+                    </article>
+                    <article class="impact-card reveal reveal-delay-4">
+                        <span class="impact-icon" aria-hidden="true">🎓</span>
+                        <span class="impact-number">Learning</span>
+                        <span class="impact-label"
+                            >Training, certificates & workshops</span
+                        >
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- VOLUNTEER LAYOUT -->
+        <section
+            style="background: var(--bg-alt)"
+            aria-labelledby="join-form-heading"
+        >
+            <div class="container">
+                <div class="volunteer-layout">
+                    <!-- Left info -->
+                    <div class="vol-info reveal-left">
+                        <span class="section-label">Join Our Mission</span>
+                        <h2 id="join-form-heading">
+                            Become a She Can Volunteer
+                        </h2>
+                        <p>
+                            Whether you're a student, professional, retiree, or
+                            homemaker — there's a place for you in our
+                            community. We welcome all backgrounds and skill
+                            sets.
+                        </p>
+                        <div class="vol-perks">
+                            <div class="vol-perk">
+                                <div class="vol-perk-icon" aria-hidden="true">
+                                    🎓
+                                </div>
+                                <div>
+                                    <h4>Training & Certification</h4>
+                                    <p>
+                                        All volunteers receive onboarding
+                                        training and an official certificate of
+                                        service.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vol-perk">
+                                <div class="vol-perk-icon" aria-hidden="true">
+                                    🤝
+                                </div>
+                                <div>
+                                    <h4>Community Access</h4>
+                                    <p>
+                                        Join our volunteer WhatsApp group and
+                                        attend exclusive events and networking
+                                        sessions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vol-perk">
+                                <div class="vol-perk-icon" aria-hidden="true">
+                                    📊
+                                </div>
+                                <div>
+                                    <h4>Flexible Commitment</h4>
+                                    <p>
+                                        Volunteer from 2 hours/week to
+                                        full-time. Remote and field options
+                                        available.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vol-perk">
+                                <div class="vol-perk-icon" aria-hidden="true">
+                                    🌟
+                                </div>
+                                <div>
+                                    <h4>Recognition Program</h4>
+                                    <p>
+                                        Our top volunteers are featured,
+                                        awarded, and offered leadership roles
+                                        within the organization.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="reveal-right">
+                        <div class="form-card">
+                            <div class="form-title">
+                                Join She Can Foundation 🌺
+                            </div>
+                            <p class="form-subtitle">
+                                Fill in the form below and our team will reach
+                                out within 48 hours.
+                            </p>
+
+                            <!-- Success Message (hidden until submit) -->
+                            <div
+                                id="vol-success"
+                                class="form-success"
+                                role="alert"
+                            >
+                                <div
+                                    class="form-success-icon"
+                                    aria-hidden="true"
+                                >
+                                    🎉
+                                </div>
+                                <h3>Welcome to the Family!</h3>
+                                <p
+                                    style="
+                                        color: var(--text-secondary);
+                                        margin-bottom: 1.5rem;
+                                    "
+                                >
+                                    Thank you for signing up to volunteer. Our
+                                    team will contact you within 48 hours.
+                                    Together, we can create extraordinary
+                                    change.
+                                </p>
+                                <a href="index.html" class="btn btn-primary"
+                                    >Explore Our Work →</a
+                                >
+                            </div>
+
+                            <form
+                                id="volunteer-form"
+                                novalidate
+                                aria-label="Volunteer registration form"
+                            >
+                                <!-- Row 1: Name + Email -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="vol-name"
+                                            >Full Name
+                                            <span
+                                                aria-hidden="true"
+                                                style="color: var(--orange)"
+                                                >*</span
+                                            ></label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="vol-name"
+                                            name="fullName"
+                                            class="form-control"
+                                            placeholder="Your full name"
+                                            required
+                                            autocomplete="name"
+                                        />
+                                        <span class="form-error" role="alert"
+                                            >Please enter your full name</span
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vol-email"
+                                            >Email Address
+                                            <span
+                                                aria-hidden="true"
+                                                style="color: var(--orange)"
+                                                >*</span
+                                            ></label
+                                        >
+                                        <input
+                                            type="email"
+                                            id="vol-email"
+                                            name="email"
+                                            class="form-control"
+                                            placeholder="you@example.com"
+                                            required
+                                            autocomplete="email"
+                                        />
+                                        <span class="form-error" role="alert"
+                                            >Please enter a valid email</span
+                                        >
+                                    </div>
+                                </div>
+
+                                <!-- Row 2: Phone + Age -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="vol-phone"
+                                            >Phone Number
+                                            <span
+                                                aria-hidden="true"
+                                                style="color: var(--orange)"
+                                                >*</span
+                                            ></label
+                                        >
+                                        <input
+                                            type="tel"
+                                            id="vol-phone"
+                                            name="phone"
+                                            class="form-control"
+                                            placeholder="+91 98765 43210"
+                                            required
+                                            autocomplete="tel"
+                                        />
+                                        <span class="form-error" role="alert"
+                                            >Please enter a valid phone
+                                            number</span
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vol-age"
+                                            >Age
+                                            <span
+                                                aria-hidden="true"
+                                                style="color: var(--orange)"
+                                                >*</span
+                                            ></label
+                                        >
+                                        <input
+                                            type="number"
+                                            id="vol-age"
+                                            name="age"
+                                            class="form-control"
+                                            placeholder="18–65"
+                                            min="16"
+                                            max="80"
+                                            required
+                                        />
+                                        <span class="form-error" role="alert"
+                                            >Please enter your age (16–80)</span
+                                        >
+                                    </div>
+                                </div>
+
+                                <!-- Row 3: City + Occupation -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="vol-city"
+                                            >City
+                                            <span
+                                                aria-hidden="true"
+                                                style="color: var(--orange)"
+                                                >*</span
+                                            ></label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="vol-city"
+                                            name="city"
+                                            class="form-control"
+                                            placeholder="Your city"
+                                            required
+                                            autocomplete="address-level2"
+                                        />
+                                        <span class="form-error" role="alert"
+                                            >Please enter your city</span
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vol-occupation"
+                                            >Occupation</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="vol-occupation"
+                                            name="occupation"
+                                            class="form-control"
+                                            placeholder="Student, Professional, etc."
+                                            autocomplete="organization-title"
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- Areas of Interest -->
+                                <div class="form-group">
+                                    <label>Areas of Interest</label>
+                                    <div
+                                        class="checkbox-group"
+                                        role="group"
+                                        aria-label="Select areas of interest"
+                                    >
+                                        <label class="checkbox-item">
+                                            <input
+                                                type="checkbox"
+                                                name="interests"
+                                                value="Education"
+                                            />
+                                            <span>Education Programs</span>
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input
+                                                type="checkbox"
+                                                name="interests"
+                                                value="Skill Development"
+                                            />
+                                            <span>Skill Development</span>
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input
+                                                type="checkbox"
+                                                name="interests"
+                                                value="Leadership"
+                                            />
+                                            <span>Leadership Workshops</span>
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input
+                                                type="checkbox"
+                                                name="interests"
+                                                value="Community Outreach"
+                                            />
+                                            <span>Community Outreach</span>
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input
+                                                type="checkbox"
+                                                name="interests"
+                                                value="Digital"
+                                            />
+                                            <span>Digital Empowerment</span>
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input
+                                                type="checkbox"
+                                                name="interests"
+                                                value="Entrepreneurship"
+                                            />
+                                            <span>Entrepreneurship</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Availability -->
+                                <div class="form-group">
+                                    <label for="vol-availability"
+                                        >Availability
+                                        <span
+                                            aria-hidden="true"
+                                            style="color: var(--orange)"
+                                            >*</span
+                                        ></label
+                                    >
+                                    <select
+                                        id="vol-availability"
+                                        name="availability"
+                                        class="form-control"
+                                        required
+                                    >
+                                        <option value="" disabled selected>
+                                            Select your availability
+                                        </option>
+                                        <option value="weekends">
+                                            Weekends Only
+                                        </option>
+                                        <option value="weekdays">
+                                            Weekdays (Part-time)
+                                        </option>
+                                        <option value="fulltime">
+                                            Full-time (Remote)
+                                        </option>
+                                        <option value="fulltime-field">
+                                            Full-time (Field Work)
+                                        </option>
+                                        <option value="flexible">
+                                            Flexible / As Needed
+                                        </option>
+                                    </select>
+                                    <span class="form-error" role="alert"
+                                        >Please select your availability</span
+                                    >
+                                </div>
+
+                                <!-- Why join -->
+                                <div class="form-group">
+                                    <label for="vol-why"
+                                        >Why do you want to join?
+                                        <span
+                                            aria-hidden="true"
+                                            style="color: var(--orange)"
+                                            >*</span
+                                        ></label
+                                    >
+                                    <textarea
+                                        id="vol-why"
+                                        name="whyJoin"
+                                        class="form-control"
+                                        placeholder="Share your motivation in 50–500 characters..."
+                                        maxlength="500"
+                                        required
+                                    ></textarea>
+                                    <div class="char-count" aria-live="polite">
+                                        0/500 characters
+                                    </div>
+                                    <span class="form-error" role="alert"
+                                        >Please tell us why you want to
+                                        join</span
+                                    >
+                                </div>
+
+                                <div class="form-actions">
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                    >
+                                        Submit Application →
+                                    </button>
+                                    <button type="button" class="btn-reset">
+                                        Reset Form
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VOLUNTEER STORIES -->
+        <section aria-labelledby="vol-stories-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Volunteer Voices</span>
+                    <h2 id="vol-stories-heading">What Our Volunteers Say</h2>
+                </div>
+                <div class="stories-grid">
+                    <article class="story-card reveal reveal-delay-1">
+                        <div class="story-img" aria-hidden="true">🌿</div>
+                        <div class="story-body">
+                            <div class="story-name">Rahul Mehta</div>
+                            <div class="story-role">Volunteer, 2 years</div>
+                            <p class="story-text">
+                                "Volunteering with She Can changed my
+                                perspective completely. I came to give, and I
+                                left with far more than I brought. The women I
+                                worked with are the most inspiring people I've
+                                met."
+                            </p>
+                        </div>
+                    </article>
+                    <article class="story-card reveal reveal-delay-2">
+                        <div class="story-img" aria-hidden="true">🌼</div>
+                        <div class="story-body">
+                            <div class="story-name">Zara Patel</div>
+                            <div class="story-role">
+                                Digital Trainer, 18 months
+                            </div>
+                            <p class="story-text">
+                                "Teaching digital skills to women in my own city
+                                was one of the most impactful things I've ever
+                                done. Seeing them use those skills to grow
+                                businesses brings tears of joy."
+                            </p>
+                        </div>
+                    </article>
+                    <article class="story-card reveal reveal-delay-3">
+                        <div class="story-img" aria-hidden="true">🌱</div>
+                        <div class="story-body">
+                            <div class="story-name">Arjun Singh</div>
+                            <div class="story-role">
+                                Field Coordinator, 3 years
+                            </div>
+                            <p class="story-text">
+                                "The team at She Can is unlike any I've been
+                                part of. The commitment, the warmth, the shared
+                                purpose — it makes every early morning and every
+                                long drive completely worth it."
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-banner" aria-labelledby="vol-cta-heading">
+            <div class="container" style="position: relative; z-index: 1">
+                <span
+                    class="section-label"
+                    style="
+                        color: rgba(255, 255, 255, 0.7);
+                        justify-content: center;
+                    "
+                    >More Ways to Help</span
+                >
+                <h2 id="vol-cta-heading">
+                    Can't Volunteer? Still Make an Impact
+                </h2>
+                <p>
+                    Share our work, partner with us, or reach out — there's
+                    always a way to be part of the She Can family.
+                </p>
+                <a href="contact.html" class="btn btn-white">Contact Us →</a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a
+                            href="index.html"
+                            class="nav-brand"
+                            style="margin-bottom: 0.5rem; display: inline-flex"
+                        >
+                            <div><img class="logopic" src="shecan-logo.avif"></div>
+                            <div class="nav-brand-text">
+                                She Can Foundation <span>Empowering Women</span>
+                            </div>
+                        </a>
+                        <p>
+                            We believe in a world where every woman has the
+                            power, support, and opportunity to reach her full
+                            potential.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook">f</a>
+                            <a href="#" aria-label="Instagram">ig</a>
+                            <a href="#" aria-label="LinkedIn">in</a>
+                            <a href="#" aria-label="YouTube">▶</a>
+                        </div>
+                    </div>
+                    <nav aria-label="Quick links">
+                        <div class="footer-col">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="programs.html">Programs</a></li>
+                                <li><a href="volunteer.html">Volunteer</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer-col">
+                        <h5>Programs</h5>
+                        <ul>
+                            <li><a href="programs.html">Education</a></li>
+                            <li>
+                                <a href="programs.html">Entrepreneurship</a>
+                            </li>
+                            <li>
+                                <a href="programs.html">Skill Development</a>
+                            </li>
+                            <li><a href="programs.html">Leadership</a></li>
+                            <li>
+                                <a href="programs.html">Community Outreach</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Newsletter</h5>
+                        <p
+                            style="
+                                font-size: 0.85rem;
+                                margin-bottom: 1rem;
+                                color: rgba(255, 255, 255, 0.5);
+                            "
+                        >
+                            Get updates on our programs and impact stories.
+                        </p>
+                        <form
+                            class="newsletter-form"
+                            aria-label="Newsletter subscription"
+                        >
+                            <input
+                                type="email"
+                                class="newsletter-input"
+                                placeholder="Your email"
+                                required
+                            />
+                            <button type="submit" class="newsletter-btn">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 She Can Foundation. All Rights Reserved. Made with ❤️
+                    for <a href="#">women everywhere</a>.
+                </p>
+            </div>
+        </footer>
+
+        <button id="back-top" aria-label="Back to top">↑</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
